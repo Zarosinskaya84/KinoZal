@@ -1,0 +1,82 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.sidebar-left {
+  margin-bottom: $gap-xl;
+}
+
+.vertical-slider{
+  border-radius: 4px;
+  overflow: hidden;
+  &__image{
+    width: 100%;
+  }
+
+}
+
+.user-login{
+  position: relative;
+ 
+  &__tabs{
+    position: absolute;
+    top: 0;
+    right: $gap-md;
+    border:none;
+   
+
+
+    a{
+      padding: 14px 5px 12px !important;
+      border:none !important;
+      color: $color-gray;
+      background-color: transparent !important;
+
+    }
+    .active a{
+      color: $color-white !important;
+
+    }
+  }
+
+}
+$image-size:75px;
+$image-size-with-padding: $image-size + $gap-md;
+
+.site-news-item{
+  clear: both;
+  &:hover{
+    a{
+      color:$color-accent;
+    }
+    .thumbnail{
+      background-color: $color-accent;
+      border-color:$color-accent;
+
+    }
+  }
+  &__thumbnail{
+    float: left;
+    width: $image-size;
+    margin: 0  $gap-md  $gap-md 0;
+   }
+  &__title{
+    margin-bottom: 0.5em;
+    height: 50px;
+    overflow: hidden;
+  }
+ 
+  &__linlk{
+    transition: 0.25s;
+    // display: block;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+  }
+  &__date{
+    text-align: right;
+    font-size: 0.8rem;
+    color:$color-gray-dark;
+  }
+
+ 
+}

@@ -2,21 +2,20 @@
 @use "mixins" as *;
 
 
-html{
-    font-size: $font-size;
+html {
+  font-size: $font-size;
 }
 
-body{
-    font-size:$font-size;
-    font-family: $font-main;
+body {
+  font-family: $font-main;
+  font-size: $font-size;
 }
 a {
-    color: $color-primary;
-    &:hover, 
-    &:focus{
-        text-decoration: none;
-       color:$color-accent ; 
+  color: $color-primary;
+  &:hover,
+  &:focus {
+    text-decoration: none;
 
-    }
-
+    color: $color-accent ;
+  }
 }
